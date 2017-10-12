@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+	{% include head.html %}
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<body class="is-loading-0 is-loading-1 is-loading-2">
+		<div id="main">
+			{% include header.html %}
+			<!-- Thumbnail -->
+			  <section id="thumbnails">
+			    {% for image in site.data.images %}
+			    <article>
+			      <a class="thumbnail" href="images/fulls/{{ image.link }}.jpg">
+			        <img src="images/thumbs/{{ image.link }}.jpg" alt="" />
+			      </a>
+			      <h2>{{ image.title }}</h2>
+			      <p>{{ image.description }}</p>
+			    </article>
+			    {% endfor %}
+			  </section>
+			{% include footer.html %}
+		</div>
+	</body>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+
+</html>
