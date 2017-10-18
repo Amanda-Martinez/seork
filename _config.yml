@@ -1,7 +1,7 @@
 # 1. Site settings in the templates via {{ site.myvariable }}.
-title: Portfolio | Seork
+title: Portfolio 400ml | Seork, graffeur à Montréal
 email: seork.art@gmail.com
-description: Découvrez le portfolio de Seork, artiste graffeur basé sur Montréal, Canada.
+description: Découvrez le portfolio de Seork, artiste graffeur basé à Montréal, Canada.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.seork.fr" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
